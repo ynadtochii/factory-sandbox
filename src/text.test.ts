@@ -5,6 +5,10 @@ describe("slugify", () => {
   it("lowercases and replaces a space", () => {
     expect(slugify("Hello World")).toBe("hello-world");
   });
+
+  it("replaces every space", () => {
+    expect(slugify("a b c d")).toBe("a-b-c-d");
+  });
 });
 
 describe("truncate", () => {
