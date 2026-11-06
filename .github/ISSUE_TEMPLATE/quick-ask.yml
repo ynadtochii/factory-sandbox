@@ -1,0 +1,11 @@
+name: Quick ask
+description: A short request. An agent turns it into a full ticket for you to review
+labels: ["agent:spec"]
+body:
+  - type: textarea
+    id: ask
+    attributes:
+      label: What do you want?
+      description: One or two sentences is enough.
+    validations:
+      required: true
