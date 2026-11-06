@@ -7,5 +7,6 @@ export function truncate(text: string, max: number): string {
 }
 
 export function wordCount(text: string): number {
-  return text.split(" ").length;
+  const trimmed = text.trim();
+  return trimmed === "" ? 0 : trimmed.split(/\s+/).length;
 }
